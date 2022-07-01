@@ -1,6 +1,6 @@
 const uploadFile = require("../middleware/upload");
 require("dotenv").config();
-const firebase = require('../firebase');
+const firebase = require('../firebase/firebase');
 const { v4: uuid_v4 } = require('uuid');
 const uuid = uuid_v4();
 
