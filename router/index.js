@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const controller = require("../controller/file.controller");
-const serverless = require('serverless-http')
 
 const routes = (app) => {
   router.get('/', (req, res) => { // route hiển thị form upload file
@@ -17,4 +16,3 @@ const routes = (app) => {
 };
 
 module.exports = routes;
-module.exports.handler = serverless(routes)
