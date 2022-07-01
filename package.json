@@ -1,34 +1,35 @@
 {
-  "name": "express-file-upload",
+  "name": "firebase-nodejs-upload-file",
   "version": "1.0.0",
-  "description": "``` npm install ```",
+  "description": "",
   "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^11.0.0",
+    "firebase": "^9.8.4",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^8.3.2",
+    "dotenv": "^16.0.1",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
-    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && NODE_ENV=production ./node_modules/.bin/netlify-lambda build src",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && NODE_ENV=production ./node_modules/.bin/netlify-lambda serve src",
     "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoangvangioi/cv.git"
+    "url": "git+https://github.com/hoangvangioi/upload-cv-nodejs.git"
   },
   "keywords": [],
   "author": "hoangvangioi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hoangvangioi/cv/issues"
+    "url": "https://github.com/hoangvangioi/upload-cv-nodejs/issues"
   },
-  "homepage": "https://github.com/hoangvangioi/cv#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "firebase": "^9.8.4",
-    "firebase-admin": "^11.0.0",
-    "multer": "^1.4.5-lts.1",
-    "netlify-lambda": "^2.0.15",
-    "serverless-http": "^3.0.1",
-    "uuid": "^8.3.2"
-  }
+  "homepage": "https://github.com/hoangvangioi/upload-cv-nodejs#readme"
 }
