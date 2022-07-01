@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.use(cors(corsOptions));
 
-const initRoutes = require("./router");
+const initRoutes = require("./src/router");
 
 app.use(express.urlencoded({ extended: true }));
 initRoutes(app);
