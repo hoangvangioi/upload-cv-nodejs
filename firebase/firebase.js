@@ -1,5 +1,5 @@
-const { cert, initializeApp } = require('firebase-admin/app');
 const { getStorage } = require('firebase-admin/storage');
+const { cert, initializeApp } = require('firebase-admin/app');
 
 const serviceAccount = {
   "type": process.env.TYPE,
